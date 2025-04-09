@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  background-image: url("../image/book_bg.jpg");
+}
+
+header {
+  background: #2c3e50;
+  padding: 32px;
+  color: white;
+  text-align: center;
+}
+
+#main-header h1 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+#main-header p {
+  font-size: 17.6px;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+  flex: 1;
+}
+
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-family: "Merriweather", serif;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.book-list {
+  list-style: none;
+}
+
+.book-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.checkbox {
+  margin-right: 16px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.book-list label {
+  cursor: pointer;
+  font-size: 17.6px;
+}
+
+.checkbox:checked + label::after {
+  content: "📚";
+  margin-left: 8px;
+}
+
+.in-progress-list .checkbox:checked + label {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+.in-progress-list .checkbox:checked + label::after {
+  content: "📖";
+  margin-left: 8px;
+}
